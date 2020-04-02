@@ -1,0 +1,15 @@
+<div class="goods">
+    <mat-form-field>
+        <mat-label>Filter goods</mat-label>
+        <input matInput [(ngModel)]="searchText" name="name" type="text" placeholder="Product name">
+    </mat-form-field>
+    
+    <mat-nav-list>
+        <mat-list-item *ngFor="let product of products | filter : searchText : 'name'">
+           <div mat-line>Имя: {{product.name}}</div>
+           <div *ngIf="product.canBuy" mat-line>Цена: {{product.price}}</div>
+           <div *ngIf="!product.canBuy" mat-line>Не продается</div>
+        </mat-list-item>
+    </mat-nav-list>
+</div>
+

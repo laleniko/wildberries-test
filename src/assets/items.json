@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "name": "apple",
+      "canBuy": true,
+      "price": 20
+    },
+    {
+      "name": "banana",
+      "canBuy": false,
+      "price": 200
+    },
+    {
+      "name": "grapefruit",
+      "canBuy": false,
+      "price": 12.3
+    },
+    {
+      "name": "mango",
+      "canBuy": true,
+      "price": 400
+    }
+  ]
+}
